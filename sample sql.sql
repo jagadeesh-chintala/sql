@@ -1,0 +1,15 @@
+create database dataanalytics;
+create table jaggu(stuname varchar(30),stuno int,address varchar(30));
+show databases;
+USE dataanalytics;
+desc jaggu;
+insert into jaggu (stuname,stuno,address) values ('jagadeesh',807,'rayachoty'),('sai',806,'mpl'),('roshni',052,'kalikiri');
+select *from jaggu;
+alter table jaggu ADD  year int;
+desc jaggu;
+SET SQL_SAFE_UPDATES = 0;
+UPDATE jaggu SET year=3 WHERE stuname='jagadeesh';
+select *from jaggu;
+UPDATE jaggu SET year=2 WHERE stuname='sai';
+UPDATE jaggu SET year=1 WHERE stuname='roshni';
+select *from jaggu;
