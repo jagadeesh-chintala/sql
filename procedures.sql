@@ -1,0 +1,6 @@
+CREATE PROCEDURE ShowStudents()
+BEGIN
+    SELECT * FROM student;
+END;
+
+SHOW CREATE PROCEDURE ShowStudents;
